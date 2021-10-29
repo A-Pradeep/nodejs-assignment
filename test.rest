@@ -1,0 +1,37 @@
+# vs code extension: REST Client # 
+
+#print all book and magazine
+GET http://localhost:3001/console/
+###
+
+#print all books and magazine by sort
+GET http://localhost:3001/console/sort
+###
+
+#find book or magazine by ISBN
+GET http://localhost:3001/console/search?type=isbn&data=1024-5245-8584
+###
+
+#find all books and magazines authors’email
+GET http://localhost:3001/console/search?type=authors&data=null-walter@echocat.org
+###
+
+# Add new book and magazine
+POST http://localhost:3001/console/add
+update-Data: true
+Content-Type: application/json
+
+{
+    "book":{
+        "title": "A Ps",
+        "isbn":"1",
+        "authors":"Ps",
+        "description":"Meh"
+    },
+    "magazine":{
+        "title":"Ps Magazine",
+        "isbn":"1",
+        "authors":"Ps",
+        "publishedAt":"23.02.2021"
+    }   
+}
