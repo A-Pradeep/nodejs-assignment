@@ -20,3 +20,6 @@ headers: {
     'user-agent': 'vscode-restclient'
   },
 ```
+
+## Server : npm start
+## Dev server : npm run dev
